@@ -1,6 +1,11 @@
 Departmant Of Human Service
 
+<br/>
 you create this tables
+
+<br/>
+
+    ``` sql
 
   CREATE TABLE "PROJE"."DEPARTMANT"
    (	"ID" NUMBER NOT NULL ENABLE,
@@ -13,7 +18,10 @@ you create this tables
  NOCOMPRESS NOLOGGING
   TABLESPACE "TBS_PROJE" ;
 
+    ```
+<br/>
 
+``` sql
     CREATE TABLE "PROJE"."EMPLOYEE"
      (	"ID" NUMBER,
   	"NAME" VARCHAR2(20 BYTE),
@@ -23,8 +31,10 @@ you create this tables
     PCTFREE 10 PCTUSED 40 INITRANS 1 MAXTRANS 255
    NOCOMPRESS NOLOGGING
     TABLESPACE "TBS_PROJE" ;
+    ```
+    <br/>
 
-
+``` sql
       CREATE TABLE "PROJE"."ROLE"
        (	"ID" NUMBER NOT NULL ENABLE,
     	"ROLE" VARCHAR2(20 BYTE),
@@ -35,3 +45,4 @@ you create this tables
       PCTFREE 10 PCTUSED 40 INITRANS 1 MAXTRANS 255
      NOCOMPRESS NOLOGGING
       TABLESPACE "TBS_PROJE" ;
+    ```
