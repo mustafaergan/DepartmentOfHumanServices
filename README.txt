@@ -5,7 +5,7 @@ you create this tables
 
 <br/>
 
-    ``` sql
+    ``` javascript
 
   CREATE TABLE "PROJE"."DEPARTMANT"
    (	"ID" NUMBER NOT NULL ENABLE,
@@ -21,7 +21,7 @@ you create this tables
     ```
 <br/>
 
-``` sql
+ ``` javascript
     CREATE TABLE "PROJE"."EMPLOYEE"
      (	"ID" NUMBER,
   	"NAME" VARCHAR2(20 BYTE),
@@ -34,7 +34,7 @@ you create this tables
     ```
     <br/>
 
-``` sql
+``` javascript
       CREATE TABLE "PROJE"."ROLE"
        (	"ID" NUMBER NOT NULL ENABLE,
     	"ROLE" VARCHAR2(20 BYTE),
