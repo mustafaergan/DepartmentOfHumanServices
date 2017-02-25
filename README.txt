@@ -1,20 +1,37 @@
-AppFuse Basic Spring MVC Archetype
---------------------------------------------------------------------------------
-If you're reading this then you've created your new project using Maven and
-appfuse-basic-spring.  You have only created the shell of an AppFuse Java EE
-application.  The project object model (pom) is defined in the file pom.xml.
-The application is ready to run as a web application. The pom.xml file is
-pre-defined with Hibernate as a persistence model and Spring MVC as the web
-framework.
+Departmant Of Human Service
 
-To get started, please complete the following steps:
+you create this tables
 
-1. Download and install a MySQL 5.x database from 
-   http://dev.mysql.com/downloads/mysql/5.0.html#downloads.
+  CREATE TABLE "PROJE"."DEPARTMANT"
+   (	"ID" NUMBER NOT NULL ENABLE,
+	"NAME" VARCHAR2(100 BYTE),
+	 CONSTRAINT "DEPARTMAN_PK" PRIMARY KEY ("ID")
+  USING INDEX PCTFREE 10 INITRANS 2 MAXTRANS 255 NOLOGGING
+  TABLESPACE "TBS_PROJE"  ENABLE
+   ) SEGMENT CREATION DEFERRED
+  PCTFREE 10 PCTUSED 40 INITRANS 1 MAXTRANS 255
+ NOCOMPRESS NOLOGGING
+  TABLESPACE "TBS_PROJE" ;
 
-2. Run "mvn jetty:run-war" and view the application at http://localhost:8080.
 
-3. More information can be found at:
+    CREATE TABLE "PROJE"."EMPLOYEE"
+     (	"ID" NUMBER,
+  	"NAME" VARCHAR2(20 BYTE),
+  	"ROLE_ID" NUMBER,
+  	"DEPARTMAN_ID" NUMBER
+     ) SEGMENT CREATION DEFERRED
+    PCTFREE 10 PCTUSED 40 INITRANS 1 MAXTRANS 255
+   NOCOMPRESS NOLOGGING
+    TABLESPACE "TBS_PROJE" ;
 
-   http://appfuse.org/display/APF/QuickStart+Guide
 
+      CREATE TABLE "PROJE"."ROLE"
+       (	"ID" NUMBER NOT NULL ENABLE,
+    	"ROLE" VARCHAR2(20 BYTE),
+    	 CONSTRAINT "ROLE_PK" PRIMARY KEY ("ID")
+      USING INDEX PCTFREE 10 INITRANS 2 MAXTRANS 255 NOLOGGING
+      TABLESPACE "TBS_PROJE"  ENABLE
+       ) SEGMENT CREATION DEFERRED
+      PCTFREE 10 PCTUSED 40 INITRANS 1 MAXTRANS 255
+     NOCOMPRESS NOLOGGING
+      TABLESPACE "TBS_PROJE" ;
