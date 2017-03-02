@@ -1,1 +1,1 @@
-<process type>: web
+web: 1
