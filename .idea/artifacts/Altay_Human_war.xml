@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="Altay-Human:war">
+    <output-path>$PROJECT_DIR$/target</output-path>
+    <root id="archive" name="ALTAY.war">
+      <element id="artifact" artifact-name="Altay-Human:war exploded" />
+    </root>
+  </artifact>
+</component>
