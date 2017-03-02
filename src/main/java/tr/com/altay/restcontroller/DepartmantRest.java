@@ -26,6 +26,11 @@ public class DepartmantRest {
 
     Gson gson = new Gson();
 
+    @RequestMapping(value = "/info/", method = RequestMethod.GET,headers="Accept=application/json")
+    public ResponseEntity getInfo() {
+        return new ResponseEntity(gson.toJson("DepartmantService"), HttpStatus.OK);
+    }
+
     @RequestMapping(value = "/departmant/", method = RequestMethod.GET,headers="Accept=application/json")
     public ResponseEntity getDepartmantByAll() {
         List<Departmant> departmants =  service.findAll();
