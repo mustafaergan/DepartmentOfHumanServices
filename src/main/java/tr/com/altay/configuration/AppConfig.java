@@ -28,4 +28,14 @@ public class AppConfig extends WebMvcConfigurerAdapter {
         return messageSource;
     }
 
+
+    /**
+     * statik javascript gibi yapıların tutulacağı yer
+     */
+    @Override
+    public void addResourceHandlers(ResourceHandlerRegistry registry) {
+        registry.addResourceHandler("/**").addResourceLocations("/**");
+        registry.addResourceHandler("/favicon.ico").addResourceLocations("/favicon.ico");
+    }
+
 }
