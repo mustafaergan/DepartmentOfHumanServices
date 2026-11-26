@@ -20,8 +20,8 @@ Departman, çalışan ve rol kayıtlarını JSON olarak dönen küçük bir Spri
 - Java, Maven (`war` paketleme)
 - Spring Framework 4.3.0 (Web MVC, ORM, TX)
 - Hibernate 4.3.11
-- Gson 2.8.0, Logback 1.1.7
-- PostgreSQL JDBC sürücüsü (9.3); `pom.xml` içinde Oracle `ojdbc6` bağımlılığı da var
+- Gson 2.8.9, Logback 1.2.13
+- PostgreSQL JDBC sürücüsü (42.2.28); `pom.xml` içinde Oracle `ojdbc6` bağımlılığı da var
 
 ## Veritabanı
 
